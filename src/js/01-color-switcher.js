@@ -8,8 +8,8 @@ function getRandomHexColor() {
   let colorChangeInterval = null;
   
   startButton.addEventListener('click', () => {
-    startButton.disabled = true; // Wyłączenie przycisku Start
-    stopButton.disabled = false; // Włączenie przycisku Stop
+    startButton.disabled = true; 
+    stopButton.disabled = false; 
   
     colorChangeInterval = setInterval(() => {
       document.body.style.backgroundColor = getRandomHexColor();
@@ -17,9 +17,9 @@ function getRandomHexColor() {
   });
   
   stopButton.addEventListener('click', () => {
-    clearInterval(colorChangeInterval); // Zatrzymanie zmiany koloru
-    startButton.disabled = false; // Włączenie przycisku Start
-    stopButton.disabled = true; // Wyłączenie przycisku Stop
+    clearInterval(colorChangeInterval); 
+    startButton.disabled = false; 
+    stopButton.disabled = true; 
   });
 
   
